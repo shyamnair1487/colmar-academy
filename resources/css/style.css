@@ -1,5 +1,8 @@
+/**** General *******/
+
 html, body {
   font-size: 16px;
+  color: 	#555555;
 }
 
 .container {
@@ -13,6 +16,10 @@ html, body {
   max-width: 60%;
 }
 
+.image img {
+  width: 100%;
+}
+
 .description {
   max-width: 40%;
   margin-left: 24px;
@@ -21,7 +28,54 @@ html, body {
 h1 {
   font-size: 2.7rem;
   font-weight: 700;
-  color: 	#555555;
+
+}
+
+h2 {
+  font-size: 2.2rem;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+
+h3 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+p {
+  margin-bottom: 8px;
+}
+
+.description {
+  display: flex;
+  flex-direction:column;
+  justify-content: space-between;
+}
+
+.info {
+  display: flex;
+}
+.pic {
+  width: 35%;
+}
+
+.pic img {
+  width: 100%;
+  margin: 1rem;
+}
+
+.details {
+  width: 65%;
+  margin-top: 1rem;
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#grey {
+  background: lightgrey;
 }
 
 /******** HEADER *******/
@@ -71,19 +125,12 @@ header ul a {
   background: lightgrey;
 }
 
-.jumbotron .image img {
-  width: 100%;
-}
-
 .jumbotron .description {
-  display: flex;
-  flex-direction:column;
   justify-content: center;
 }
 
 .jumbotron .description h1, .jumbotron .description p, .jumbotron .description a {
   width: 70%;
-
 }
 
 .jumbotron h1, .jumbotron p {
@@ -107,6 +154,19 @@ header ul a {
 
 /***** Supporting-section-1 *****/
 
-.supporting-section-1 .image img {
-  width: 100%;
+.supporting-section-1 .description {
+  margin-top: -1rem;
 }
+
+.supporting-section-1 .image img {
+  margin-bottom: 2rem;
+}
+
+.supporting-section-1 a {
+  color: blue;
+}
+
+
+
+
+.
