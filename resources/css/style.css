@@ -1,3 +1,45 @@
 html, body {
   font-size: 16px;
 }
+
+
+/******** HEADER *******/
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  height: 64px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+}
+
+header span {
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
+header span .grey {
+  color: grey;
+}
+
+header ul li{
+  display: inline-block;
+  padding-top: 1.4rem;
+  padding-bottom: 1.4rem;
+}
+
+header ul li:first-child, header ul li:nth-child(2), header ul li:nth-child(3) {
+  border-right: 16px solid lightblue;
+
+}
+
+header ul a {
+  text-decoration: none;
+}
