@@ -2,6 +2,27 @@ html, body {
   font-size: 16px;
 }
 
+.container {
+  margin-left: 24px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: flex;
+}
+
+.image {
+  max-width: 60%;
+}
+
+.description {
+  max-width: 40%;
+  margin-left: 24px;
+}
+
+h1 {
+  font-size: 2.7rem;
+  font-weight: 700;
+  color: 	#555555;
+}
 
 /******** HEADER *******/
 
@@ -9,7 +30,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 1rem;
   height: 64px;
   margin-left: 24px;
   margin-right: 24px;
@@ -42,4 +62,46 @@ header ul li:first-child, header ul li:nth-child(2), header ul li:nth-child(3) {
 
 header ul a {
   text-decoration: none;
+}
+
+/***** JUMBOTRON ********/
+
+
+.jumbotron {
+  background: lightgrey;
+}
+
+.jumbotron .image img {
+  width: 100%;
+}
+
+.jumbotron .description {
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+}
+
+.jumbotron .description h1, .jumbotron .description p, .jumbotron .description a {
+  width: 70%;
+
+}
+
+.jumbotron h1, .jumbotron p {
+  margin-bottom: 1.5rem;
+}
+
+.jumbotron .description p:nth-child(3)  {
+  border: 1px solid grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: grey;
+  color: white;
+}
+
+.jumbotron .description a {
+  color: white;
+  margin: 8px auto;
+  position: relative;
+  left: 4rem;
 }
