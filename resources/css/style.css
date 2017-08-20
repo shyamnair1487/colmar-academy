@@ -20,6 +20,10 @@ html, body {
   width: 100%;
 }
 
+.image video {
+  width: 100%;
+}
+
 .description {
   max-width: 40%;
   margin-left: 24px;
@@ -38,7 +42,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   font-weight: 500;
   margin-bottom: 8px;
 }
@@ -85,13 +89,18 @@ header {
   justify-content: space-between;
   align-items: center;
   height: 64px;
-  margin-left: 24px;
-  margin-right: 24px;
+  /*margin-left: 24px;
+  margin-right: 24px;*/
+  position: fixed;
+  z-index: 100;
+  background: white;
+  width: 100%;
 }
 
 header .logo {
   display: flex;
   align-items: center;
+  margin-left: 24px;
 }
 
 header span {
@@ -101,6 +110,10 @@ header span {
 
 header span .grey {
   color: grey;
+}
+
+header nav {
+  margin-right: 24px;
 }
 
 header ul li{
@@ -118,12 +131,12 @@ header ul a {
   text-decoration: none;
 }
 
-/***** JUMBOTRON ********/
-
-
-.jumbotron {
-  background: lightgrey;
+header ul a:hover {
+  width: 300px;	height: 100px;	background-color: #A2A3A5;	position: relative;
+  color: white;
 }
+
+/***** JUMBOTRON ********/
 
 .jumbotron .description {
   justify-content: center;
@@ -166,7 +179,85 @@ header ul a {
   color: blue;
 }
 
+/**** CONTENT *************/
 
+.content h2 {
+  padding-top: 2rem;
+  text-align: center;
+}
 
+.courses {
+  display: flex;
+  margin: 32px 72px;
+}
 
-.
+.courses .course-col {
+  display: flex;
+  flex-direction: column;
+  max-width: 33.33%
+}
+
+.courses .course-col .course-item {
+  width: 100%;
+}
+
+.courses .course-item img {
+  width: 100%;
+}
+
+#between-horizontal {
+  margin-right: 2rem;
+}
+
+#between-vertical {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.course-description {
+  background: white;
+  padding: 16px;
+}
+
+.course-description h3 {
+  color: #000;
+  font-weight: 600;
+}
+
+.special {
+  font-style: italic;
+  font-size: 1.2rem;
+}
+
+/***** Supporting-section-2 *********/
+
+.supporting-section-2 h2 {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.supporting-section-2 .description {
+  /*margin-top: -1rem;*/
+  justify-content: flex-start;
+}
+
+.supporting-section-2 .image h2 {
+  margin-top: 24px;
+  margin-bottom: 8px;
+  text-align: left;
+}
+ /***** FOOTER ***********/
+
+ footer {
+   display: flex;
+   justify-content: space-between;
+   margin-left: 24px;
+   margin-right: 24px;
+   border-top: 1px solid grey;
+   padding-top: 1rem;
+   padding-bottom: 3rem;
+ }
+
+ footer li {
+   display: inline-block;
+ }
