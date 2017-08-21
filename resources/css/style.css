@@ -10,10 +10,11 @@ html, body {
   padding-top: 32px;
   padding-bottom: 32px;
   display: flex;
+
 }
 
 .image {
-  max-width: 60%;
+  width: 60%;
 }
 
 .image img {
@@ -80,6 +81,15 @@ p {
 
 #grey {
   background: lightgrey;
+}
+
+@media only screen and (max-width: 450px) {
+  .container {
+    margin: 0;
+  }
+  .image {
+    width: 100%;
+  }
 }
 
 /******** HEADER *******/
@@ -153,6 +163,9 @@ header .mobile-header {
 }
 
 /***** JUMBOTRON ********/
+.jumbotron .image, .jumbotron .description {
+  margin-top: 64px;
+}
 
 .jumbotron .description {
   justify-content: center;
@@ -179,6 +192,21 @@ header .mobile-header {
   color: white;
   margin: 8px auto;
   text-align: center;
+}
+
+@media only screen and (max-width: 450px) {
+  .jumbotron .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .jumbotron .image {
+      width: 100%;
+  }
+
+  .jumbotron .image img {
+    margin-top: 2rem;
+  }
 }
 
 /***** Supporting-section-1 *****/
